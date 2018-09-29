@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\administrator\documents\visual studio 2015\projects\assignment1\assignment1\source.cpp(15): warning C4101: 'agg': unreferenced local variable
+c:\users\administrator\documents\visual studio 2015\projects\assignment1\assignment1\source.cpp(50): warning C4018: '<': signed/unsigned mismatch
+  Assignment1.vcxproj -> C:\Users\Administrator\Documents\Visual Studio 2015\Projects\Assignment1\Debug\Assignment1.exe
