@@ -1,0 +1,6 @@
+﻿  Source.cpp
+c:\users\administrator\documents\visual studio 2015\projects\assignment1\assignment1\source.cpp(16): warning C4101: 'agg': unreferenced local variable
+c:\users\administrator\documents\visual studio 2015\projects\assignment1\assignment1\source.cpp(99): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Main.cpp
+  Generating Code...
+  Assignment1.vcxproj -> C:\Users\Administrator\documents\visual studio 2015\Projects\Assignment1\x64\Debug\Assignment1.exe

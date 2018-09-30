@@ -1,3 +1,15 @@
+/*!
+Muhammad Bilal
+211196
+
+BESE8B
+
+This program was written by me in the portfolio of file handling of .csv file.
+In this scenario we are using a pre-defined file of GradeBook Sample for parsing members in grade categories.
+*/
+
+
+
 #include <iostream>
 #include <string>
 #include <sstream>

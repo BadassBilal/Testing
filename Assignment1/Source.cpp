@@ -5,11 +5,12 @@
 #include <vector>
 #include "Header.h"
 using namespace std;
-
+/// Opens File.
 void GB::openFile(string Path)
 {
 	tFile.open(Path);
 }
+///Calculate the Aggregate.
 double GB::aggregateCalc(double q_1, double q_2, double q_3, double a_1, double a_2, double a_3, double oht1, double oht2, double ese)
 {
 	double q, A, O, E, agg;
@@ -19,7 +20,7 @@ double GB::aggregateCalc(double q_1, double q_2, double q_3, double a_1, double 
 	E = ese*0.4;
 	return q + A + O + E;
 }
-
+///Updates the Initial Vectors - aggregate/Full-Last Names/CMSIDs
 void GB::Vadd(string f, string l, double a, int cms)
 {
 	aggregate.push_back(a);
@@ -27,7 +28,7 @@ void GB::Vadd(string f, string l, double a, int cms)
 	cmsId.push_back(cms);
 }
 
-
+///Creates File and Writes to them
 void GB::createFiles()
 {
 	aG.open("A.csv");
@@ -92,6 +93,7 @@ void GB::createFiles()
 	}
 
 }
+///filters the names according to aggregate
 void GB::filter()
 {
 	int tempSize = aggregate.size();
@@ -158,12 +160,14 @@ void GB::filter()
 	}
 }
 
+///For Class Average
 void GB::classAvr(double a)
 {
 	serial += 1;
 	cAvg += a;
 }
 
+///Boolean Decider
 bool GB::emptyStrThenF(string s)
 {
 	if (s != "")
@@ -171,6 +175,8 @@ bool GB::emptyStrThenF(string s)
 	else
 		return true;
 }
+
+///Reads data from .csv
 void GB::readData()
 {
 	int tC = 0;
@@ -240,6 +246,7 @@ void GB::readData()
 	}
 }
 
+///Closes Files
 void GB::closeFile()
 {
 	tFile.close();
