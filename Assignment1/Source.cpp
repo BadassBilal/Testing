@@ -4,6 +4,7 @@
 #include <fstream>
 #include <vector>
 #include "Header.h"
+#include <assert.h>
 using namespace std;
 /// Opens File.
 void GB::openFile(string Path)
@@ -18,7 +19,9 @@ double GB::aggregateCalc(double q_1, double q_2, double q_3, double a_1, double 
 	A = (((a_1 + a_2 + a_3) * 100) / 30) * 0.1;
 	O = (oht1 + oht2) * (0.4);
 	E = ese*0.4;
-	return q + A + O + E;
+	agg = q + A + O + E;
+	assert(agg != NULL);
+	return agg;
 }
 ///Updates the Initial Vectors - aggregate/Full-Last Names/CMSIDs
 void GB::Vadd(string f, string l, double a, int cms)
